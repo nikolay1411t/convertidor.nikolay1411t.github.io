@@ -1,0 +1,153 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #E4F86D;
+}
+
+.logo-mi-encriptador {
+    
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    color: #daa213;
+    padding: 0;
+    margin-bottom: 20px;
+
+}
+
+.first-caja {
+    margin: 0 0 0 10em;
+    width: 43%;
+    display: inline;
+
+}
+
+.ingrese-el-texto {
+    background-color: #E4F86D;
+    display: inline;
+    font-size: 20px;
+    padding: 0;
+    color: #daa213;
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 320px;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: -10px 10px 40px;
+}
+
+.ingrese-el-texto::-webkit-input-placeholder{
+    text-align: left;
+    padding: 0;
+    line-height: 320px;
+    
+}
+.ingrese-el-texto:focus {
+    outline: none;
+}
+
+.encriptar {
+    width: 45%;
+    font-size: 19px;
+    color: #daa213;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    margin:10px 25px 0 0;
+    padding: 15px;
+    border: 2px solid #daa213;
+    border-radius: 15px;
+    background: #e0ed98;
+    box-shadow: 0 10px 15px rgb(0,0,0,0.4);
+    transition: 1s;
+}
+
+.encriptar:hover {
+    background: #daa213;
+    border: 2px solid #daa213;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.desencriptar {
+    width: 45%;
+    font-size: 19px;
+    color: #daa213;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    margin:10px 0 0 25px;
+    padding: 15px;
+    border: 2px solid #daa213;
+    border-radius: 15px;
+    background: #e0ed98;
+    box-shadow: 0 10px 15px rgb(0,0,0,0.4);
+    transition: 1s;
+}
+
+.desencriptar:hover{
+    background: #daa213;
+    border: 2px solid #daa213;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+.second-caja{
+    display: inline;
+    margin:20px 0 0 5em;
+    width: 400px;
+    height: 400px;
+}
+
+.sale-texto {
+    margin: 10px 0 0 0;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    height: 410px;
+    box-shadow: 0 10px 15px rgb(0,0,0,0.4);
+    border: none;
+    border-radius: 15px;
+
+}
+
+.sale-texto:focus{
+    outline: none;
+}
+
+.imagen-encriptador{
+    position: absolute;
+    opacity: 0.4;
+    top: 100px;
+    right: 250px;
+}
+
+.sale-texto::placeholder{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #daa213;
+    text-align: center;
+    line-height: 550px;
+    
+}
+
+footer{
+    padding: 0%;
+    margin-top: 65px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    color: #daa213;
+    background: #ffffff;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: end;
+    border: none;
+    border-radius: 15px;
+    width: 78%;
+    margin: 0 0 0 158px;
+    padding: 8px;
+    box-shadow: 0 10px 15px rgb(0,0,0,0.4);
+}
