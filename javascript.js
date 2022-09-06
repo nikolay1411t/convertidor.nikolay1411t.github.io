@@ -53,3 +53,9 @@ function botonDesencriptar() {
     saleTexto.style.backgroundImage= "none"
     ingreseTexto.value=""
 }
+
+function copiarTexto () {
+    let cuadro = document.querySelector(".sale-texto").value;
+    navigator.clipboard.writeText(cuadro);
+}
+

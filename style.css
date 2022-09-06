@@ -1,6 +1,18 @@
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #E4F86D;
+    
+
+    background-image: linear-gradient( 
+        to bottom right, 
+        #fde63b 30%,
+        #fcc055 60%,
+        #daa213 100%
+        
+        
+        
+    );
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
 .logo-mi-encriptador {
@@ -12,6 +24,7 @@ body {
 h1 {
     font-size: 30px;
     color: #daa213;
+    font-weight: bolder;
     padding: 0;
     margin-bottom: 20px;
 
@@ -25,17 +38,19 @@ h1 {
 }
 
 .ingrese-el-texto {
-    background-color: #E4F86D;
+    background-color: transparent;
     display: inline;
     font-size: 20px;
     padding: 0;
     color: #daa213;
     margin: 0;
     border: none;
+    border-radius: 15px;
     width: 100%;
     height: 320px;
     font-family: 'Ubuntu', sans-serif;
     box-shadow: -10px 10px 40px;
+    box-shadow: 0 10px 15px rgb(0,0,0,0.4);
 }
 
 .ingrese-el-texto::-webkit-input-placeholder{
@@ -51,57 +66,56 @@ h1 {
 .encriptar {
     width: 45%;
     font-size: 19px;
-    color: #daa213;
+    color: #fff;
     font-weight: bolder;
     font-family: 'Ubuntu', sans-serif;
     margin:10px 25px 0 0;
     padding: 15px;
-    border: 2px solid #daa213;
     border-radius: 15px;
-    background: #e0ed98;
+    background: #daa213;
     box-shadow: 0 10px 15px rgb(0,0,0,0.4);
+    border: none;
     transition: 1s;
 }
 
 .encriptar:hover {
-    background: #daa213;
-    border: 2px solid #daa213;
-    color: #ffffff;
+    background: #e0ed98;
+    border: none;
+    color: #daa213;
     cursor: pointer;
 
 }
 
 .encriptar:active{
     transition: 0s;
-    color: #daa213;
+    color: #e0ed98;
 }
 
 .desencriptar {
     width: 45%;
     font-size: 19px;
-    color: #daa213;
+    color: #fff;
     font-weight: bolder;
     font-family: 'Ubuntu', sans-serif;
     margin:10px 0 0 25px;
     padding: 15px;
-    border: 2px solid #daa213;
     border-radius: 15px;
-    background: #e0ed98;
+    border: none;
+    background: #daa213;
     box-shadow: 0 10px 15px rgb(0,0,0,0.4);
     transition: 1s;
 }
 
 .desencriptar:hover{
-    background: #daa213;
-    border: 2px solid #daa213;
-    color: #ffffff;
+    background: #e0ed98;
+    color: #daa213;
     cursor: pointer;
 
 }
 
 .desencriptar:active{
     transition: 0s;
-    color: #daa213;
+    color: #e0ed98;
 }
 
 .second-caja{
@@ -114,12 +128,16 @@ h1 {
 .sale-texto {
     margin: 10px 0 0 0;
     font-family: 'Ubuntu', sans-serif;
+    color: #daa213;
     width: 100%;
     height: 410px;
     box-shadow: 0 10px 15px rgb(0,0,0,0.4);
     border: none;
     border-radius: 15px;
+    background-color: transparent;
     background-image: url(../img\ para\ encriptadpr.png);
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
     background-repeat: no-repeat;
     background-position: 100px 50px ;
     background-size: 180px;
@@ -133,23 +151,51 @@ h1 {
 
 
 .sale-texto::placeholder{
-    font-size: 20px;
-    font-weight: bolder;
+    font-size: 22px;
+    font-weight: bold;
     color: #daa213;
     text-align: center;
     line-height: 550px;
     
 }
 
+.copiar {
+    width: 45%;
+    font-size: 19px;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 15px 0 0 110px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background: #daa213;
+    box-shadow: 0 10px 15px rgb(0,0,0,0.4);
+    transition: 1s;
+}
+
+.copiar:hover {
+    background: #e0ed98;
+    color: #daa213;
+    cursor: pointer;
+
+}
+
+.copiar:active{
+    transition: 0s;
+    color: #e0ed98;
+}
+
 footer{
     padding: 0%;
-    margin-top: 65px;
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
 .footer {
-    color: #daa213;
+    color: #ffffff;
     background: #ffffff;
+    background-color: transparent;
     font-weight: bolder;
     font-size: 20px;
     text-align: end;
@@ -158,5 +204,22 @@ footer{
     width: 78%;
     margin: 0 0 0 158px;
     padding: 8px;
-    box-shadow: 0 10px 15px rgb(0,0,0,0.4);
+    
 }
+
+.footer a {
+    text-decoration: dashed;
+    color: #fde63b;
+    font-weight: bolder;
+}
+
+.footer a:hover{
+    transition: 1s;
+    color: #e0ed98;
+}
+
+.footer a:active{
+    color: #fde63b;
+    transition: 0s;
+}
+
