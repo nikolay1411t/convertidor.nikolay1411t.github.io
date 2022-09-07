@@ -57,5 +57,15 @@ function botonDesencriptar() {
 function copiarTexto () {
     let cuadro = document.querySelector(".sale-texto").value;
     navigator.clipboard.writeText(cuadro);
+    swal.fire({
+        text: 'hola',
+        html: '<p class="p-swal">Texto Copiado</p>',
+        width: '30%',
+        icon: 'success',
+        background: '#daa213', 
+        confirmButtonText: 'Confirmar',
+        confirmButtonColor:'rgba(90,0,9,1)',
+        footer: '<p>espero que te guste el encriptador :´)</p>'
+    })
 }
 
