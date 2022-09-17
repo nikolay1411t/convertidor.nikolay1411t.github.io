@@ -1,3 +1,4 @@
+// encriptador
 
 const ingreseTexto= document.querySelector(".ingrese-el-texto")
 const saleTexto= document.querySelector(".sale-texto")
@@ -29,7 +30,7 @@ function encriptar (TextoAEncriptar){
 function botonEncriptar(){
     const textoEncriptado =encriptar(ingreseTexto.value)
     saleTexto.value= textoEncriptado
-    saleTexto.style.backgroundImage= "none"
+    //saleTexto.style.backgroundImage= "none"
     ingreseTexto.value=""
 }
 

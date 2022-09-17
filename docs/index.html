@@ -13,9 +13,29 @@
     <title> Mi Encriptador</title>
 </head>
 <body>
-   
-    <main class="responsive">  
+    <div class="header-caja">  
+        <img src="img/nt logo largo .svg" alt="logo svg"  class="logotipo">
+        <img src="img/nt logo 1 daa213.svg" alt="logo Nt svg" class="logotipo-2">
         
+        <div class="menu">
+            <nav >
+                <ul class="menu-lista">
+                    <li><a href="index.html">
+                        Encriptador
+                    </a></li>
+                    <li><a href="convertidor.html">
+                        Lista
+                    </a></li>
+                    <li><a href="btn-menu">
+                        Otro
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>     
+   
+    
+    <main class="responsive" id="encriptador">      
         <fieldset class="first-caja">
             <div class="logo-mi-encriptador"><h1>MI ENCRIPTADOR</h1></div>
             <textarea name="ingrese-el-texto" id="" cols="30" rows="10" placeholder="Ingrese el texto "class="ingrese-el-texto" ></textarea>
@@ -25,8 +45,7 @@
             </div>
         </fieldset>
         <fieldset class="second-caja" >
-            <textarea name="" cols="30" rows="10"  placeholder="Ningún mensaje encontrado" class="sale-texto" >
-            </textarea>
+            <textarea name="" cols="30" rows="10"  placeholder="Ningún mensaje encontrado" class="sale-texto" ></textarea>
             <div class="boton-copiar">
             <button  class="copiar" onclick="copiarTexto()"> Copiar </button>
             </div>

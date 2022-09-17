@@ -1,0 +1,279 @@
+html {
+    font-family: 'Ubuntu', sans-serif;
+    background-image: radial-gradient(circle, rgba(90,0,9,1) 45%, rgba(47,1,1,1) 100%);
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.border {
+    border-radius: 8px;
+}
+/* header*/
+
+.header-caja {
+    display: flex;
+    flex-direction: row;
+     width: 100%;
+    height: 25vh;
+    margin: 0 0 0 5px;
+    padding: 15px;
+    background-image: radial-gradient(circle, rgb(83, 0, 7) 20%, rgba(47,1,1,1) 100%);
+}
+.menu {
+    position: absolute;
+    right: 5vw;
+    top: 10vh;
+}
+.menu-lista {
+    display: flex;
+    flex-direction: row; 
+}
+.menu-lista li a{
+    margin: 0 0 0 15px;
+    text-decoration:dashed;
+    color: #daa213;
+    font-size: 30px;
+}
+.menu-lista li a:hover{
+    color: #d2d2d2;
+}
+.menu-lista li a:active{
+    color: #daa213;
+}
+
+.logotipo {
+    position: absolute;
+    top: 25px;
+    left: 3vw;
+    width: 140px;
+}
+.logotipo-2 {
+    position: absolute;
+    top: 25px;
+    left: 3vw;
+    width: 150px;
+    display: none;
+}
+/*fotter*/
+
+footer{
+    padding: 0%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: transparent;
+    font-weight:lighter;
+    font-size: 20px;
+    text-align: end;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 93%;
+    margin: 8px;
+    padding: 8px;
+    
+}
+
+.footer a {
+    text-decoration: dashed;
+    color: #daa213;
+    font-weight: bolder;
+    margin: 0 0 0 1%;
+}
+
+.footer a:active{
+    color: #fde63b;
+    transition: 0s;
+}
+/*iconos*/
+
+.fa-github{
+    color: #daa213;
+    font-size: 25px;
+}
+.fa-github:hover{
+    color:#000000;
+    transition: 500ms;
+}
+.fa-linkedin{
+    color: #daa213;
+    font-size: 25px;
+}
+.fa-linkedin:hover{
+    color:#0e76a8;
+    transition: 500ms;
+}
+
+/* CONVERTIDOR*/
+
+/*caja principal*/
+#mainbox{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* primera caja*/
+
+#caja-de-informacion{
+    padding: 5px;
+    width: 50%;
+}
+h1, p {
+    font-family: 'Ubuntu', sans-serif; 
+    color: #daa213;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.explicacion {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* segunda caja*/
+#caja-de-lista{
+    padding: 2%;
+    margin: 2% auto;
+    width: 35%;
+    border-radius: 10px;
+    background-color: #daa213;
+    overflow: hidden;
+
+}
+
+#fecha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: rgb(83, 0, 7);  
+}
+
+*:first-letter{
+    text-transform: capitalize;
+}
+
+#fechaNumero,
+#fechaMes,
+#fechaDiaDerecha{
+    font-weight: bolder;
+}
+#fechaAño{
+    font-weight: lighter;
+}
+#fechaIzquierda {
+    display: flex;
+    align-items: center;
+}
+#fechaNumero {
+    font-size: 50px;
+    margin: 0 10px;
+}
+#fechaDiaDerecha {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+#formulario {
+    margin: 5% auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 8% auto;
+    grid-column-gap: 15px;
+
+}
+
+.ingreseTexto:focus {
+    outline: none;
+}
+.ingreseTexto::placeholder {
+    color: #daa213;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.ingreseTexto {
+    height: 5vh;
+    color: rgb(83, 0, 7);
+    font-size: 0.9rem;
+    background-color: #dadada;
+    border: none;
+}
+.botonMas {
+    border-radius: 50%;
+    background-color: #fde63b;
+    color: rgb(83, 0, 7);
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border:none;
+}
+.botonMas:hover {
+    background-color: #dadada;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.botonordenar {
+    color: #daa213;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    box-shadow: inset 0 0 0 0 #dadada;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.botonordenar:hover {
+    color: #dadada;
+    font-size: 1 rem;
+    cursor: pointer;
+    box-shadow: inset 150px 0 0 0  rgb(83, 0, 7);
+}
+
+#cajaDeTareas {
+}
+
+.tarea {
+    width: 100%;
+    height: 5vh;
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(83, 0, 7);
+    background-color: #fde63b;
+    border-radius: 8px;
+    margin: 8px auto;
+}
+
+.tarea:hover {
+    font-size:1.3rem;
+    cursor: pointer;
+    
+}
+
+.hecha {
+    width: 100%;
+    height: 5vh;
+    font-size: 1.1rem;
+    color: rgb(83, 0, 7);
+    background-color: #dadada;
+    border-radius: 8px;
+    margin: 8px auto;
+    text-decoration: line-through;
+}
+

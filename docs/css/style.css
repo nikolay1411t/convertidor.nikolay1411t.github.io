@@ -1,11 +1,7 @@
 html {
     font-family: 'Ubuntu', sans-serif;
-    background-image: linear-gradient( 
-        to bottom , 
-        #ffefa9 10%,
-        #daa213 80% 
-    );
-    background-image: radial-gradient(circle, rgba(90,0,9,1) 57%, rgba(47,1,1,1) 100%);
+    background-image: radial-gradient(circle, rgba(90,0,9,1) 45%, rgba(47,1,1,1) 100%);
+    scroll-behavior: smooth;
     
 }
 .p-swal{
@@ -14,13 +10,7 @@ html {
     color: white;
     font-weight: bolder;
 }
-.b-swal{
-    padding: 15px;
-}
-
-.i-swal{
-    color: red;
-}
+/* caja central*/
 
 body{
     width: 100%;
@@ -43,6 +33,56 @@ main {
     padding: 0;
     margin: 0%;
 }
+
+/* header*/
+
+.header-caja {
+    display: flex;
+    flex-direction: row;
+     width: 100%;
+    height: 20vh;
+    margin: 0 0 0 5px;
+    padding: 15px;
+    background-image: radial-gradient(circle, rgb(83, 0, 7) 20%, rgba(47,1,1,1) 100%);
+}
+.menu {
+    position: absolute;
+    right: 5vw;
+    top: 10vh;
+}
+.menu-lista {
+    display: flex;
+    flex-direction: row; 
+}
+.menu-lista li a{
+    margin: 0 0 0 15px;
+    text-decoration:dashed;
+    color: #daa213;
+    font-size: 30px;
+}
+.menu-lista li a:hover{
+    color: #d2d2d2;
+}
+.menu-lista li a:active{
+    color: #daa213;
+}
+
+.logotipo {
+    position: absolute;
+    top: 25px;
+    left: 3vw;
+    width: 150px;
+}
+.logotipo-2 {
+    position: absolute;
+    top: 25px;
+    left: 3vw;
+    width: 150px;
+    display: none;
+}
+
+
+/* caja 1*/
 
 .logo-mi-encriptador {
     
@@ -97,7 +137,7 @@ h1 {
     outline: none;
 }
 
-/*botones*/
+/*botones-caja 1*/
 
 .botones{
     display: flex;
@@ -117,7 +157,7 @@ h1 {
     background-color: #daa213;
     box-shadow: 0 10px 15px rgb(0,0,0,0.4);
     border: none;
-    transition: 1s;
+    transition: 500ms;
     box-sizing: border-box;
 }
 
@@ -146,7 +186,7 @@ h1 {
     border: none;
     background-color: #daa213;
     box-shadow: 0 10px 15px rgb(0,0,0,0.4);
-    transition: 1s;
+    transition: 500ms;
     box-sizing: border-box;
 }
 
@@ -161,7 +201,7 @@ h1 {
     transition: 0s;
     color: #d2d2d2;
 }
-
+/* caja 2*/
 .second-caja{
     margin:0 ;
     padding: 10px;
@@ -192,6 +232,7 @@ h1 {
 
 .sale-texto:focus{
     outline: none;
+    background-image: none;
 }
 
 .sale-texto::placeholder{
@@ -219,7 +260,7 @@ h1 {
     border-radius: 15px;
     background-color: #daa213;
     box-shadow: 0 10px 15px rgb(0,0,0,0.4);
-    transition: 1s;
+    transition: 500ms;
 }
 
 .copiar:hover {
@@ -233,6 +274,8 @@ h1 {
     transition: 0s;
     color: #d2d2d2;
 }
+
+/*fotter*/
 
 footer{
     padding: 0%;
@@ -286,6 +329,8 @@ footer{
     transition: 500ms;
 }
 
+/*responsive*/
+
 @media screen and (max-width:950px){
     
     .sale-texto::placeholder{
@@ -296,6 +341,12 @@ footer{
 
 @media screen and (max-width:770px){
 
+    .logotipo {
+        display: none;
+    }
+    .logotipo-2 {
+        display: inline;
+    }
 
     .sale-texto::placeholder{
         font-size: 18px ;

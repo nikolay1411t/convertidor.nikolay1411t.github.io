@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style_convertidor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Lista</title>
+
+</head>
+<body>
+    <div class="header-caja">  
+        <img src="img/nt logo largo .svg" alt="logo svg"  class="logotipo">
+        <img src="img/nt logo 1 daa213.svg" alt="logo Nt svg" class="logotipo-2">
+        
+        <div class="menu">
+            <nav >
+                <ul class="menu-lista">
+                    <li><a href="index.html">
+                        Encriptador
+                    </a></li>
+                    <li><a href="convertidor.html">
+                        Lista
+                    </a></li>
+                    <li><a href="btn-menu">
+                        Otro
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>   
+   <main id="mainbox">
+        <div id="caja-de-informacion">
+            <h1 class="titulo">Lista de Tareas</h1>
+            <div class="explicacion"><p > Esta lista realiza un agendamiento de tareas a lo largo del dia, es un proyecto creado con html, css, y javascript; la logica es sencilla ya que utiliza unicamente dos botones y un espacio para escribir dicha tarea, lo que hacemos con el botón del mas es especificamente agregar una nueva tarea a partir de una "div" nueva llamada tarea y ademas de eso el botón ordenar ordena especificamente la tarea en "hechas" y "por hacer" dano como ultimo posicionamiento a las tareas hechas tachandolas y las tareas por hacer hasta arriba.</p>
+            </div>
+        </div>
+       
+        <div id="caja-de-lista">
+            <div id="fecha">
+                <div id="fechaIzquierda">
+                    <div id="fechaNumero"></div>
+                    <div>   
+                        <div id="fechaMes"></div>
+                        <div id="fechaAño"></div>
+                    </div>
+                </div>
+                <div id="fechaDiaDerecha"></div>
+            </div>
+            <form onsubmit="añadirTarea(event)" id="formulario">
+                <input type="text" class="ingreseTexto border" placeholder="ingrese una tarea" 
+                name="tareaTexto">
+                <button type="submit" class="botonMas">+</button>
+                <button type="button" class="botonordenar border" onclick="ordenar()" >ordenar</button>
+            </form>
+            <div id="cajaDeTareas" name="cajaDeTareas"></div>
+        </div>
+
+   </main>
+    <footer>
+        <div class="footer"> 
+            <a >Creado por Nikolay Tipanluiza</a>
+            <a href="https://github.com/nikolay1411t" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nikolaytyd/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        
+        </div>
+    </footer>
+    <script src="js/convertidor-js.js"></script>
+    <script src="https://kit.fontawesome.com/548075e603.js" crossorigin="anonymous"></script>
+</body>
+</html>
